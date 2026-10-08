@@ -33,39 +33,34 @@ h1 > span { display: block; font-size: 22.4px; line-height: 1.35; letter-spacing
 .affiliation { font-size: 15.2px; color: var(--link); margin-top: 3px; }
 .paper-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6.4px 22.4px; font-size: 14.4px; font-weight: 700; margin-top: 16px; }
 .code-status { color: var(--muted); }
-.gallery { margin-top: 24.8px; }
-.abstract { max-width: 740px; margin: 0 auto 28px; text-align: center; }
+.abstract { max-width: 740px; margin: 28px auto 0; text-align: center; }
 .abstract h2 { font-size: 22px; margin-bottom: 13px; }
 .abstract p { font-size: 14.4px; line-height: 1.7; }
-.gallery-heading { display: flex; justify-content: space-between; align-items: center; gap: 11.2px; }
-.gallery-heading h2 { font-size: 20.8px; margin: 0; }
+.gallery-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.gallery-heading h2 { font-size: 24.8px; margin: 0; }
 .gallery-heading > button, .citation-actions button { border: 1px solid #c8c8c8; background: #fff; color: #404040; border-radius: 3.2px; padding: 5.6px 8.8px; font: 10.4px/1.4 var(--sans); min-height: 27.2px; }
 .gallery-heading > button:hover, .citation-actions button:hover { background: #f0f4fa; border-color: #7896bf; }
-.demo-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; width: min(100%, 630px); margin: 17.6px auto 0; }
-.demo-item { min-width: 0; }
-.demo-image { display: flex; align-items: center; padding: 0; width: 100%; aspect-ratio: 644 / 217; background: #000; border: 0; border-radius: 0; position: relative; overflow: hidden; }
-.demo-image img { width: 100%; max-height: 100%; object-fit: contain; }
+.gallery-heading > button { border-color: #d9e1eb; border-radius: 20px; padding: 6px 12px; color: #5b6675; background: #f8fafc; min-height: 30px; }
+.demo-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 25px; width: min(100%, 630px); margin: 25px auto 0; }
+.demo-item { min-width: 0; border: 1px solid #dce3eb; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 3px 12px #243d5d08; }
+.demo-image { display: block; padding: 0; width: 100%; aspect-ratio: var(--video-ratio, 644 / 185); background: #000; border: 0; border-radius: 0; position: relative; overflow: hidden; }
+.demo-image img { position: absolute; bottom: 0; left: 0; width: 100%; height: auto; max-width: none; }
 .play-indicator { display: none; position: absolute; inset: 0; margin: auto; width: 34.4px; height: 34.4px; border-radius: 50%; background: #000a; color: #fff; font: 15.2px/34.4px var(--sans); text-align: center; padding-left: 2px; }
 .demo-image[aria-pressed='true'] .play-indicator { display: block; }
-.demo-title { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 0 0 10px; }
-.demo-title h3 { font-size: 15px; }
-.demo-title a { font: 11px/1.4 var(--sans); text-decoration: none; }
-.demo-title a:hover { text-decoration: underline; }
-.comparison-labels { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; font-family: var(--sans); }
-.comparison-labels > div { display: flex; justify-content: center; align-items: center; gap: 9px; padding: 10px 6px; border-top: 2px solid; }
-.baseline-label { background: #f1f3f5; color: #4b5662; border-color: #aab3bd; }
-.ours-label { background: #edf4ff; color: #1855a0; border-color: #1855a0; }
+.demo-title { padding: 13px 18px; background: #fbfcfe; border-bottom: 1px solid #e5eaf0; text-align: center; }
+.demo-title h3 { font-size: 15px; font-weight: 600; letter-spacing: .1px; color: #273c55; }
+.comparison-labels { display: grid; grid-template-columns: 1fr 1fr; font-family: var(--sans); }
+.comparison-labels > div { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; padding: 12px 8px; }
+.baseline-label { background: #fff; color: #596373; }
+.ours-label { background: #f3f7fe; color: #1855a0; border-left: 1px solid #e2eaf4; }
 .method-label { font-size: 12px; font-weight: 600; }
-.comparison-badge { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 3px; background: #e1e5ea; }
-.ours-label .comparison-badge { background: #1855a0; color: #fff; }
+.comparison-role { font-size: 9px; line-height: 1.3; letter-spacing: 1.2px; text-transform: uppercase; color: #7e8997; }
+.ours-label .comparison-role { color: #3476c0; font-weight: 600; }
 .section-intro { font-size: 15.2px; line-height: 1.55; margin-bottom: 19.2px; }
 .paper-figure > a { display: block; }
 .paper-figure figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; font-size: 12px; line-height: 1.5; color: var(--muted); margin-top: 9.6px; }
 .paper-figure figcaption > a { flex-shrink: 0; font-size: 11.2px; }
 .paper-figure figcaption strong { color: #333; }
-.method-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22.4px; border-top: 1px solid var(--line); padding-top: 16px; margin-top: 19.2px; }
-.method-steps p { font-size: 13.6px; line-height: 1.45; color: #505050; }
-.method-steps strong { display: block; font-family: var(--sans); font-size: 12px; color: #222; margin-bottom: 4.8px; }
 .score-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid var(--line); padding-block: 16px; text-align: center; gap: 16px; }
 .score-grid > div + div { border-left: 1px solid var(--line); }
 .score-grid p { font-size: 12.8px; margin: 5.6px 0 1px; }
@@ -105,25 +100,22 @@ footer p + p { margin-top: 4px; }
   .author-notes { font-size: 13px; gap: 3px 12px; margin-top: 10px; }
   .affiliation { font-size: 16px; line-height: 1.4; margin: 7px auto 0; max-width: 340px; }
   .paper-links { font-size: 16px; gap: 8px 17px; margin-top: 19px; }
-  .gallery { margin-top: 26px; }
-  .abstract { margin-bottom: 24px; }
+  .abstract { margin-top: 24px; }
   .abstract h2 { font-size: 25px; }
   .abstract p { font-size: 16px; line-height: 1.65; }
   .gallery-heading { align-items: flex-start; flex-wrap: wrap; gap: 10px; }
   .gallery-heading h2 { font-size: 23px; }
   .gallery-heading > button { font-size: 12px; }
-  .demo-grid { grid-template-columns: 1fr; gap: 27px; margin-top: 17px; }
-  .demo-title h3 { font-size: 16px; }
-  .demo-title a { font-size: 12px; }
-  .comparison-labels > div { flex-wrap: wrap; gap: 4px 6px; padding-block: 8px; }
+  .demo-grid { grid-template-columns: 1fr; gap: 22px; margin-top: 21px; }
+  .demo-title { padding: 11px 12px; }
+  .demo-title h3 { font-size: 15px; }
+  .comparison-labels > div { gap: 4px; padding-block: 10px; }
   .method-label { font-size: 11px; }
-  .comparison-badge { font-size: 10px; }
+  .comparison-role { font-size: 9px; }
   h2 { font-size: 28px; }
   .section-intro { font-size: 18px; line-height: 1.55; margin-bottom: 19px; }
   .paper-figure figcaption { font-size: 14px; gap: 15px; align-items: flex-start; }
   .paper-figure figcaption > a { font-size: 13px; }
-  .method-steps { grid-template-columns: 1fr; gap: 17px; padding-top: 18px; margin-top: 20px; }
-  .method-steps strong { margin-bottom: 3px; }
   .score-grid { grid-template-columns: 1fr; gap: 17px; padding-block: 18px; }
   .score-grid > div + div { border-left: 0; border-top: 1px solid var(--line); padding-top: 16px; }
   .score-grid strong { font-size: 29px; }
