@@ -33,7 +33,7 @@ h1 > span { display: block; font-size: 22.4px; line-height: 1.35; letter-spacing
 .affiliation { font-size: 15.2px; color: var(--link); margin-top: 3px; }
 .paper-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6.4px 22.4px; font-size: 14.4px; font-weight: 700; margin-top: 16px; }
 .code-status { color: var(--muted); }
-.abstract { max-width: 740px; margin: 28px auto 0; text-align: center; }
+.abstract { max-width: 740px; margin: 44px auto 0; text-align: center; }
 .abstract h2 { font-size: 22px; margin-bottom: 13px; }
 .abstract p { font-size: 14.4px; line-height: 1.7; }
 .gallery-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
@@ -100,7 +100,7 @@ footer p + p { margin-top: 4px; }
   .author-notes { font-size: 13px; gap: 3px 12px; margin-top: 10px; }
   .affiliation { font-size: 16px; line-height: 1.4; margin: 7px auto 0; max-width: 340px; }
   .paper-links { font-size: 16px; gap: 8px 17px; margin-top: 19px; }
-  .abstract { margin-top: 24px; }
+  .abstract { margin-top: 36px; }
   .abstract h2 { font-size: 25px; }
   .abstract p { font-size: 16px; line-height: 1.65; }
   .gallery-heading { align-items: flex-start; flex-wrap: wrap; gap: 10px; }

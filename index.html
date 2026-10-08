@@ -88,7 +88,7 @@
 
 <section aria-labelledby="abstract-heading" class="abstract"><h2 id="abstract-heading">Abstract</h2><p>Surgical video generation holds substantial potential for surgical education, simulation, and data augmentation, yet generating surgical videos with realistic and clinically plausible motion remains challenging. Most existing methods rely on auxiliary conditions, such as masks, trajectories, depth, or reference videos, to achieve visually plausible synthesis. Yet, these auxiliary conditions typically require additional manual annotation or specialized acquisition, making it difficult to scale such methods beyond small, curated datasets. This motivates the need for a reference-free architecture capable of generating high-quality surgical video without requiring auxiliary visual conditions at inference time. We propose FLAIR, a Flow-guided Latent Action Injection framework for Reference-free surgical video generation. FLAIR learns action priors from optical flow of real surgical videos, dynamically predicts corresponding latent action representation from an input prompt, and injects it into a frozen base model to generate surgical videos with improved action consistency. ...</p></section></section><section aria-labelledby="demos-heading" class="paper-panel video-panel" id="demos">
 
-<div class="gallery-heading"><h2 id="demos-heading">Video Results</h2><button aria-label="Pause all animations" aria-pressed="false" id="motion-toggle" type="button">Pause all</button></div>
+<div class="gallery-heading"><h2 id="demos-heading">Gallery</h2><button aria-label="Pause all animations" aria-pressed="false" id="motion-toggle" type="button">Pause all</button></div>
 <div class="demo-grid"><figure class="demo-item" id="demo-wan"><figcaption class="demo-title"><h3>Wan 2.1</h3></figcaption>
 <button aria-label="Pause Wan 2.1 comparison" aria-pressed="false" class="demo-image" data-model="wan" style="--video-ratio: 644 / 185" type="button">
 <img alt="Wan 2.1: LoRA-only baseline on the left, LoRA-FLAIR (ours) on the right. Animated surgical video comparison." data-animation="assets/wan.gif" data-poster="assets/wan-poster.webp" height="217" src="assets/wan-poster.webp" width="644"/>
@@ -108,7 +108,7 @@
 <noscript><p>Open the original animations: <a href="assets/wan.gif">Wan 2.1</a> · <a href="assets/hunyuan.gif">HunyuanVideo 1.5</a> · <a href="assets/cogvideox.gif">CogVideoX-2B</a>.</p></noscript>
 </section>
 <section aria-labelledby="results-heading" class="paper-panel" id="results">
-<h2 id="results-heading">Quantitative Results</h2>
+<h2 id="results-heading">Results</h2>
 <p class="section-intro">Evaluated on 200 surgical prompts. FLAIR reduces FVD across all three backbones compared with LoRA-only.</p>
 <figure class="paper-figure results-table"><div aria-label="Full results table; scroll horizontally on small screens" class="figure-scroll" role="region" tabindex="0"><a aria-label="Open Table 1 at full resolution" href="assets/results-table.webp" rel="noopener" target="_blank"><img alt="Table 1: full comparison of video quality and SurgMetrics for Wan 2.1, HunyuanVideo 1.5, and CogVideoX-2B, including base models, LoRA, and LoRA-FLAIR. The full numerical table is also available in the linked paper." height="632" loading="lazy" src="assets/results-table.webp" width="1896"/></a></div><figcaption><span><strong>The full picture.</strong> General video metrics and SurgMetrics, reproduced from Table 1.</span><a href="https://arxiv.org/pdf/2610.09800#page=8">Table in paper <span aria-hidden="true">↗</span></a></figcaption></figure>
 </section>
@@ -119,12 +119,12 @@
 
 </section>
 <section aria-labelledby="metrics-heading" class="paper-panel">
-<h2 id="metrics-heading">SurgMetrics</h2>
+<h2 id="metrics-heading">SurgMetrics Training</h2>
 <p class="section-intro">Six artifact axes assess semantics, appearance, motion, instruments, tissue, and tracking, alongside a separate domain score.</p>
-<figure class="paper-figure"><a aria-label="Open the SurgMetrics overview at full resolution" href="assets/surgmetrics.webp" rel="noopener" target="_blank"><img alt="SurgMetrics extracts surgical video features and dense optical flow, then measures semantic, appearance, drift, instrument, tissue, and tracking artifacts. A separate domain branch assesses surgical realism." height="652" loading="lazy" src="assets/surgmetrics.webp" width="1888"/></a><figcaption><span>Surgical features and optical flow provide complementary signals.</span><a href="assets/surgmetrics.webp" rel="noopener" target="_blank">Enlarge <span aria-hidden="true">↗</span></a></figcaption></figure>
+<figure class="paper-figure"><img alt="SurgMetrics extracts surgical video features and dense optical flow, then measures semantic, appearance, drift, instrument, tissue, and tracking artifacts. A separate domain branch assesses surgical realism." height="652" loading="lazy" src="assets/surgmetrics.webp" width="1888"/></figure>
 </section>
 <section aria-labelledby="citation-heading" class="paper-panel citation-panel" id="citation">
-<div class="citation-heading"><h2 id="citation-heading">BibTeX</h2><div class="citation-actions"><a download="" href="citation.bib">[Download .bib]</a><button id="copy-citation" type="button">Copy BibTeX</button></div></div>
+<div class="citation-heading"><h2 id="citation-heading">Citation</h2><div class="citation-actions"><a download="" href="citation.bib">[Download .bib]</a><button id="copy-citation" type="button">Copy BibTeX</button></div></div>
 <pre><code id="bibtex">@misc{qin2026flair,
   title={Beyond Masks and Trajectories: Flow-Guided Latent Action
          Injection for Stable Surgical Video Generation},
