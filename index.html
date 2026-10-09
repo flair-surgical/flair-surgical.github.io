@@ -90,26 +90,29 @@
 
 <div class="gallery-heading"><h2 id="demos-heading">Gallery</h2><button aria-label="Pause all animations" aria-pressed="false" id="motion-toggle" type="button">Pause all</button></div>
 <div class="demo-grid"><figure class="demo-item" id="demo-wan"><figcaption class="demo-title"><h3>Wan 2.1</h3></figcaption>
-<button aria-label="Pause Wan 2.1 comparison" aria-pressed="false" class="demo-image" data-model="wan" style="--video-ratio: 644 / 185" type="button">
-<img alt="Wan 2.1: LoRA-only baseline on the left, LoRA-FLAIR (ours) on the right. Animated surgical video comparison." data-animation="assets/wan.gif" data-poster="assets/wan-poster.webp" height="217" src="assets/wan-poster.webp" width="644"/>
+<button aria-label="Pause Wan 2.1 comparison" aria-describedby="prompt-wan" aria-pressed="false" class="demo-image" data-model="wan" style="--video-ratio: 644 / 185" type="button">
+<img alt="Wan 2.1: LoRA on the left, LoRA-FLAIR (ours) on the right. Animated surgical video comparison." data-animation="assets/wan.gif" data-poster="assets/wan-poster.webp" height="217" src="assets/wan-poster.webp" width="644"/>
 <span aria-hidden="true" class="play-indicator">▶</span>
-</button><div class="comparison-labels"><div class="baseline-label"><span class="method-label">LoRA-only</span><span class="comparison-role">Baseline</span></div><div class="ours-label"><span class="method-label">LoRA + FLAIR</span><span class="comparison-role">Ours</span></div></div>
+</button><div class="comparison-labels"><div class="baseline-label"><span class="method-label">LoRA</span></div><div class="ours-label"><span class="method-label">LoRA + FLAIR</span><span class="comparison-role">Ours</span></div></div>
+<div class="demo-prompt" id="prompt-wan"><span class="prompt-label">Prompt</span><p>A laparoscopic surgeon applies bipolar coagulation to seal a small vessel near the gallbladder during cholecystectomy, careful instrument tip positioning with steady traction, scope pulls back to reveal wider anatomy, realistic endoscopic footage.</p></div>
 </figure><figure class="demo-item" id="demo-hunyuan"><figcaption class="demo-title"><h3>HunyuanVideo 1.5</h3></figcaption>
-<button aria-label="Pause HunyuanVideo 1.5 comparison" aria-pressed="false" class="demo-image" data-model="hunyuan" style="--video-ratio: 644 / 178" type="button">
-<img alt="HunyuanVideo 1.5: LoRA-only baseline on the left, LoRA-FLAIR (ours) on the right. Animated surgical video comparison." data-animation="assets/hunyuan.gif" data-poster="assets/hunyuan-poster.webp" height="210" src="assets/hunyuan-poster.webp" width="644"/>
+<button aria-label="Pause HunyuanVideo 1.5 comparison" aria-describedby="prompt-hunyuan" aria-pressed="false" class="demo-image" data-model="hunyuan" style="--video-ratio: 644 / 178" type="button">
+<img alt="HunyuanVideo 1.5: LoRA on the left, LoRA-FLAIR (ours) on the right. Animated surgical video comparison." data-animation="assets/hunyuan.gif" data-poster="assets/hunyuan-poster.webp" height="210" src="assets/hunyuan-poster.webp" width="644"/>
 <span aria-hidden="true" class="play-indicator">▶</span>
-</button><div class="comparison-labels"><div class="baseline-label"><span class="method-label">LoRA-only</span><span class="comparison-role">Baseline</span></div><div class="ours-label"><span class="method-label">LoRA + FLAIR</span><span class="comparison-role">Ours</span></div></div>
+</button><div class="comparison-labels"><div class="baseline-label"><span class="method-label">LoRA</span></div><div class="ours-label"><span class="method-label">LoRA + FLAIR</span><span class="comparison-role">Ours</span></div></div>
+<div class="demo-prompt" id="prompt-hunyuan"><span class="prompt-label">Prompt</span><p>A laparoscopic surgeon performs dissection, dissecting the posterior peritoneum to expose the uterosacral ligaments during hysterectomy, the hook advancing with controlled cautery, scope pans left across pelvic anatomy, realistic endoscopic footage, 4K.</p></div>
 </figure><figure class="demo-item" id="demo-cogvideox"><figcaption class="demo-title"><h3>CogVideoX-2B</h3></figcaption>
-<button aria-label="Pause CogVideoX-2B comparison" aria-pressed="false" class="demo-image" data-model="cogvideox" style="--video-ratio: 644 / 185" type="button">
-<img alt="CogVideoX-2B: LoRA-only baseline on the left, LoRA-FLAIR (ours) on the right. Animated surgical video comparison." data-animation="assets/cogvideox.gif" data-poster="assets/cogvideox-poster.webp" height="217" src="assets/cogvideox-poster.webp" width="644"/>
+<button aria-label="Pause CogVideoX-2B comparison" aria-describedby="prompt-cogvideox" aria-pressed="false" class="demo-image" data-model="cogvideox" style="--video-ratio: 644 / 185" type="button">
+<img alt="CogVideoX-2B: LoRA on the left, LoRA-FLAIR (ours) on the right. Animated surgical video comparison." data-animation="assets/cogvideox.gif" data-poster="assets/cogvideox-poster.webp" height="217" src="assets/cogvideox-poster.webp" width="644"/>
 <span aria-hidden="true" class="play-indicator">▶</span>
-</button><div class="comparison-labels"><div class="baseline-label"><span class="method-label">LoRA-only</span><span class="comparison-role">Baseline</span></div><div class="ours-label"><span class="method-label">LoRA + FLAIR</span><span class="comparison-role">Ours</span></div></div>
+</button><div class="comparison-labels"><div class="baseline-label"><span class="method-label">LoRA</span></div><div class="ours-label"><span class="method-label">LoRA + FLAIR</span><span class="comparison-role">Ours</span></div></div>
+<div class="demo-prompt" id="prompt-cogvideox"><span class="prompt-label">Prompt</span><p>A laparoscopic surgeon performs dissection of the gastrocolic ligament during laparoscopic gastrectomy, developing the lesser sac with careful blunt and sharp dissection near the gastroepiploic vessels, steady laparoscope tracking, clinical realism, 4K.</p></div>
 </figure></div>
 <noscript><p>Open the original animations: <a href="assets/wan.gif">Wan 2.1</a> · <a href="assets/hunyuan.gif">HunyuanVideo 1.5</a> · <a href="assets/cogvideox.gif">CogVideoX-2B</a>.</p></noscript>
 </section>
 <section aria-labelledby="results-heading" class="paper-panel" id="results">
 <h2 id="results-heading">Quantitative Results</h2>
-<p class="section-intro">Evaluated on 200 surgical prompts. FLAIR reduces FVD across all three backbones compared with LoRA-only.</p>
+<p class="section-intro">Evaluated on 200 surgical prompts. FLAIR reduces FVD across all three backbones compared with LoRA.</p>
 <figure class="paper-figure results-table"><div aria-label="Full results table; scroll horizontally on small screens" class="figure-scroll" role="region" tabindex="0"><a aria-label="Open Table 1 at full resolution" href="assets/results-table.webp" rel="noopener" target="_blank"><img alt="Table 1: full comparison of video quality and SurgMetrics for Wan 2.1, HunyuanVideo 1.5, and CogVideoX-2B, including base models, LoRA, and LoRA-FLAIR. The full numerical table is also available in the linked paper." height="632" loading="lazy" src="assets/results-table.webp" width="1896"/></a></div><figcaption><span><strong>The full picture.</strong> General video metrics and SurgMetrics, reproduced from Table 1.</span><a href="https://arxiv.org/pdf/2610.09800#page=8">Table in paper <span aria-hidden="true">↗</span></a></figcaption></figure>
 </section>
 <section aria-labelledby="method-heading" class="paper-panel" id="method">
